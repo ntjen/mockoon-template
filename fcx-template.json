@@ -1,78 +1,172 @@
 {
-  "serviceQualificationDate":"{{faker 'date.recent'}}",
-  "state":"done",
-  "qualificationResult":"qualified",
-  "serviceQualificationItem":[
+  "uuid": "",
+  "lastMigration": 13,
+  "name": "Tutorial - Generate mock data",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "routes": [
     {
-      "state":"done",
-      "qualificationResult":"qualified",
-      "service":{
-        "serviceCharacteristic":[
-          {
-            "name":"primary.minLength",
-            "value":"4320",
-            "valueType":"string"
-          },
-          {
-            "name":"primary.maxLength",
-            "value":"44328",
-            "valueType":"string"
-          },
-          {
-            "name":"primary.minAttn",
-            "value":"-44.2",
-            "valueType":"string"
-          },
-          {
-            "name":"primary.maxAttn",
-            "value":"-47.3",
-            "valueType":"string"
-          },
-          {
-            "name":"primary.status",
-            "value":"In Service",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.minLength",
-            "value":"4630",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.maxLength",
-            "value":"4638",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.minAttn",
-            "value":"-48.2",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.maxAttn",
-            "value":"-49.3",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.status",
-            "value":"In Construction",
-            "valueType":"string"
-          },
-          {
-            "name":"secondary.rfsDate",
-            "value":"24/12/2020",
-            "valueType":"string"
-          }
-        ],
-        "place":[
-          {
-            "id":"{{body 'serviceQualificationItem.0.service.place.0.id'}}"
-          },
-          {
-            "id":"{{body 'serviceQualificationItem.0.service.place.1.id'}}"
-          }
-        ]
-      }
+      "uuid": "",
+      "documentation": "Get a list of posts (JSON)",
+      "method": "get",
+      "endpoint": "tmf465",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "[{\r\n  \"serviceQualificationDate\":\"{{faker 'date.recent'}}\",\r\n  \"state\":\"done\",\r\n  \"qualificationResult\":\"qualified\",\r\n  \"serviceQualificationItem\":[\r\n    {\r\n      \"state\":\"done\",\r\n      \"qualificationResult\":\"qualified\",\r\n      \"service\":{\r\n        \"serviceCharacteristic\":[\r\n          {\r\n            \"name\":\"primary.minLength\",\r\n            \"value\":\"4320\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxLength\",\r\n            \"value\":\"44328\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.minAttn\",\r\n            \"value\":\"-44.2\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxAttn\",\r\n            \"value\":\"-47.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.status\",\r\n            \"value\":\"In Service\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.minLength\",\r\n            \"value\":\"4630\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxLength\",\r\n            \"value\":\"4638\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.minAttn\",\r\n            \"value\":\"-48.2\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxAttn\",\r\n            \"value\":\"-49.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.status\",\r\n            \"value\":\"In Construction\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.rfsDate\",\r\n            \"value\":\"24\/12\/2020\",\r\n            \"valueType\":\"string\"\r\n          }\r\n        ],\r\n        \"place\":[\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.0.id'}}\"\r\n          },\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.1.id'}}\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ]\r\n}]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    },
+    {
+      "uuid": "",
+      "documentation": "Get a list of location (CSV)",
+      "method": "get",
+      "endpoint": "geoData",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "city,state,address,latitude,longitude,timezone\r\n{{#repeat 5000}}\r\n{{faker 'address.city'}},{{faker 'address.stateAbbr'}},{{faker 'address.streetAddress'}},{{faker 'address.latitude'}},{{faker 'address.longitude'}},{{faker 'address.timeZone'}}\r\n{{/repeat}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "text/csv"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    },
+    {
+      "uuid": "",
+      "documentation": "Get a list of products (XML)",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<PRODUCTS>\r\n  {{# repeat 50}}\r\n  <PRODUCT>\r\n    <UUID>{{faker 'random.uuid'}}</UUID>\r\n    <NAME>{{faker 'commerce.product'}}</NAME>\r\n    <PRICE>{{faker 'commerce.price'}}</PRICE>\r\n    <COLOR>{{faker 'commerce.color'}}</COLOR>\r\n    <INVENTORY>{{faker 'random.number' 50}}</INVENTORY>\r\n  </PRODUCT>\r\n  {{/ repeat}}\r\n</PRODUCTS>",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    },
+    {
+      "uuid": "",
+      "documentation": "Create a user",
+      "method": "post",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "{\r\n  \"id\": \"{{faker 'random.uuid'}}\",\r\n  \"firstname\": \"{{body 'firstname'}}\",\r\n  \"lastname\": \"{{body 'lastname'}}\",\r\n  \"birthdate\": \"{{body 'birthdate'}}\",\r\n  \"email\": \"{{body 'email'}}\",\r\n  \"createdAt\": \"{{now}}\"\r\n}",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "Created",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    },
+    {
+      "uuid": "",
+      "documentation": "Get a list of products or materials",
+      "method": "get",
+      "endpoint": "inventory/:type",
+      "responses": [
+        {
+          "uuid": "",
+          "body": "[\r\n  {{#repeat (queryParam 'total' '5')}}\r\n  {\r\n    \"id\": \"{{faker 'random.uuid'}}\",\r\n    {{# switch (urlParam 'type')}}\r\n    {{# case 'products'}}\r\n    \"name\": \"{{faker 'commerce.product'}}\",\r\n    \"price\": \"{{faker 'commerce.price'}} EUR\"\r\n    {{/ case}}\r\n    {{# case 'materials'}}\r\n    \"name\": \"{{faker 'commerce.productMaterial'}}\",\r\n    \"quantity\": \"{{faker 'random.number' 50}}\"\r\n    {{/ case}}\r\n    {{/ switch}}\r\n  }\r\n  {{/repeat}}\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Success",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "https": false,
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
     }
   ]
 }
