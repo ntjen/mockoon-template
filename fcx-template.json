@@ -14,23 +14,23 @@
       "responses": [
         {
           "uuid": "",
-          "body": "{\r\n  \"serviceQualificationDate\":\"{{now 'DD\/MM\/YYYY'}}\",\r\n  \"state\":\"done\",\r\n  
-\"qualificationResult\":\"qualified\",\r\n  \"serviceQualificationItem\":[\r\n    {\r\n      \"state\":\"done\",\r\n      
-\"qualificationResult\":\"qualified\",\r\n      \"service\":{\r\n        \"serviceCharacteristic\":[\r\n          {\r\n            
-\"name\":\"primary.minLength\",\r\n            \"value\":\"4320\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"primary.maxLength\",\r\n            \"value\":\"44328\",\r\n            \"valueType\":\"string\"\r\n          
-},\r\n          {\r\n            \"name\":\"primary.minAttn\",\r\n            \"value\":\"-44.2\",\r\n            
-\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxAttn\",\r\n            
-\"value\":\"-47.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.status\",\r\n            
-\"value\":\"In Service\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            
-\"name\":\"secondary.minLength\",\r\n            \"value\":\"4630\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"secondary.maxLength\",\r\n            \"value\":\"4638\",\r\n            \"valueType\":\"string\"\r\n          
-},\r\n          {\r\n            \"name\":\"secondary.minAttn\",\r\n            \"value\":\"-48.2\",\r\n            
-\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxAttn\",\r\n            
-\"value\":\"-49.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            
-\"name\":\"secondary.status\",\r\n            \"value\":\"In Construction\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"secondary.rfsDate\",\r\n            \"value\":\"{{now 'DD\/MM\/YYYY'}}\",\r\n            
-\"valueType\":\"string\"\r\n          
+          "body": "{\r\n  \"serviceQualificationDate\":\"{{now 'DD/MM/YYYY'}}\",\r\n  \"state\":\"done\",\r\n
+\"qualificationResult\":\"qualified\",\r\n  \"serviceQualificationItem\":[\r\n    {\r\n      \"state\":\"done\",\r\n
+\"qualificationResult\":\"qualified\",\r\n      \"service\":{\r\n        \"serviceCharacteristic\":[\r\n          {\r\n
+\"name\":\"primary.minLength\",\r\n            \"value\":\"4320\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"primary.maxLength\",\r\n            \"value\":\"44328\",\r\n            \"valueType\":\"string\"\r\n
+},\r\n          {\r\n            \"name\":\"primary.minAttn\",\r\n            \"value\":\"-44.2\",\r\n
+\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxAttn\",\r\n
+\"value\":\"-47.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.status\",\r\n
+\"value\":\"In Service\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n
+\"name\":\"secondary.minLength\",\r\n            \"value\":\"4630\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"secondary.maxLength\",\r\n            \"value\":\"4638\",\r\n            \"valueType\":\"string\"\r\n
+},\r\n          {\r\n            \"name\":\"secondary.minAttn\",\r\n            \"value\":\"-48.2\",\r\n
+\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxAttn\",\r\n
+\"value\":\"-49.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n
+\"name\":\"secondary.status\",\r\n            \"value\":\"In Construction\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"secondary.rfsDate\",\r\n            \"value\":\"{{now 'DD/MM/YYYY'}}\",\r\n            
+\"valueType\":\"string\"\r\n
 }\r\n        ],\r\n        \"place\":[\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.0.id'}}\"\r\n          },\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.1.id'}}\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ]\r\n}",
           "latency": 0,
           "statusCode": 200,
@@ -59,23 +59,23 @@
       "responses": [
         {
           "uuid": "",
-          "body": "{\r\n  \"serviceQualificationDate\":\"{{now 'DD\/MM\/YYYY'}}\",\r\n  \"state\":\"done\",\r\n  
-\"qualificationResult\":\"qualified\",\r\n  \"serviceQualificationItem\":[\r\n    {\r\n      \"state\":\"done\",\r\n      
-\"qualificationResult\":\"qualified\",\r\n      \"service\":{\r\n        \"serviceCharacteristic\":[\r\n          {\r\n            
-\"name\":\"primary.minLength\",\r\n            \"value\":\"4320\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"primary.maxLength\",\r\n            \"value\":\"44328\",\r\n            \"valueType\":\"string\"\r\n          
-},\r\n          {\r\n            \"name\":\"primary.minAttn\",\r\n            \"value\":\"-44.2\",\r\n            
-\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxAttn\",\r\n            
-\"value\":\"-47.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.status\",\r\n            
-\"value\":\"In Service\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            
-\"name\":\"secondary.minLength\",\r\n            \"value\":\"4630\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"secondary.maxLength\",\r\n            \"value\":\"4638\",\r\n            \"valueType\":\"string\"\r\n          
-},\r\n          {\r\n            \"name\":\"secondary.minAttn\",\r\n            \"value\":\"-48.2\",\r\n            
-\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxAttn\",\r\n            
-\"value\":\"-49.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            
-\"name\":\"secondary.status\",\r\n            \"value\":\"In Construction\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          
-{\r\n            \"name\":\"secondary.rfsDate\",\r\n            \"value\":\"{{now 'DD\/MM\/YYYY'}}\",\r\n            
-\"valueType\":\"string\"\r\n          
+          "body": "{\r\n  \"serviceQualificationDate\":\"{{now 'DD/MM/YYYY'}}\",\r\n  \"state\":\"done\",\r\n
+\"qualificationResult\":\"qualified\",\r\n  \"serviceQualificationItem\":[\r\n    {\r\n      \"state\":\"done\",\r\n
+\"qualificationResult\":\"qualified\",\r\n      \"service\":{\r\n        \"serviceCharacteristic\":[\r\n          {\r\n
+\"name\":\"primary.minLength\",\r\n            \"value\":\"4320\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"primary.maxLength\",\r\n            \"value\":\"44328\",\r\n            \"valueType\":\"string\"\r\n
+},\r\n          {\r\n            \"name\":\"primary.minAttn\",\r\n            \"value\":\"-44.2\",\r\n
+\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.maxAttn\",\r\n
+\"value\":\"-47.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"primary.status\",\r\n
+\"value\":\"In Service\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n
+\"name\":\"secondary.minLength\",\r\n            \"value\":\"4630\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"secondary.maxLength\",\r\n            \"value\":\"4638\",\r\n            \"valueType\":\"string\"\r\n
+},\r\n          {\r\n            \"name\":\"secondary.minAttn\",\r\n            \"value\":\"-48.2\",\r\n
+\"valueType\":\"string\"\r\n          },\r\n          {\r\n            \"name\":\"secondary.maxAttn\",\r\n
+\"value\":\"-49.3\",\r\n            \"valueType\":\"string\"\r\n          },\r\n          {\r\n
+\"name\":\"secondary.status\",\r\n            \"value\":\"In Construction\",\r\n            \"valueType\":\"string\"\r\n          },\r\n
+{\r\n            \"name\":\"secondary.rfsDate\",\r\n            \"value\":\"{{now 'DD/MM/YYYY'}}\",\r\n
+\"valueType\":\"string\"\r\n
 }\r\n        ],\r\n        \"place\":[\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.0.id'}}\"\r\n          },\r\n          {\r\n            \"id\":\"{{body 'serviceQualificationItem.0.service.place.1.id'}}\"\r\n          }\r\n        ]\r\n      }\r\n    }\r\n  ]\r\n}",
           "latency": 0,
           "statusCode": 201,
@@ -232,4 +232,3 @@
     }
   ]
 }
-
