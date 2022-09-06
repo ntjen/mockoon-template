@@ -85,7 +85,17 @@
           "rules": [],
           "rulesOperator": "AND",
           "disableTemplating": false
-        },
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false
+    },
+    {
+      "uuid": "",
+      "documentation": "Get Service Ordering Response",
+      "method": "post",
+      "endpoint": "/tmf641",
+      "responses": [
         {
           "uuid": "",
           "body": "{\n  id = \"{{guid}}\"\n}",
