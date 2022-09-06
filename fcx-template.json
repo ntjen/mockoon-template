@@ -77,7 +77,7 @@
           "headers": [
             {
               "key": "Content-Type",
-              "value": "text/csv"
+              "value": "application/json"
             }
           ],
           "filePath": "",
