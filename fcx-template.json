@@ -104,7 +104,7 @@
       "responses": [
         {
           "uuid": "e6b82d42-6d62-4829-9fe8-f3e23cb795f2",
-          "body": "{\n    \"id\": \"9{{faker 'datatype.number' min=1000000000000 max=999999999999}}\",\n    \"href\": \"http://inventory.telflowprovider.com/{{body 'orderItem.0.service.id'}}\"\n}",
+          "body": "{\n    \"id\": \"9{{faker 'datatype.number' min=100000000000 max=9999999999999}}\",\n    \"href\": \"http://inventory.telflowprovider.com/{{body 'orderItem.0.service.id'}}\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "Success",
